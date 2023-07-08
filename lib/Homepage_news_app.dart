@@ -185,9 +185,10 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF111929),
-      appBar: AppBar(
-        title: Text('News App created by Vihan'),
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: Color(0xFF111929),
+      //   title: Text('News App created by Vihan'),
+      // ),
       body:
       //  General(),
         buildPageView(),
@@ -199,5 +200,6 @@ class _HomepageState extends State<Homepage> {
             items: buildBottomNavBarItems()
         ),
     );
+
   }
 }

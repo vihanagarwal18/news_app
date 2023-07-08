@@ -23,6 +23,9 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFF111929),)
+      ),
       title: 'News App',
       debugShowCheckedModeBanner: false,
       home: isFirstTime ? AppStart() : Homepage(),
